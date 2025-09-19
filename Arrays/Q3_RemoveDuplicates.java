@@ -16,7 +16,7 @@ public class Q3_RemoveDuplicates {
         
         int l = 1; 
         for (int i = 1; i < n; i++) {
-            if (arr[i] != arr[l - 1]) { 
+            if (arr[i] != arr[i - 1]) { 
                 arr[l] = arr[i];
                 l++;
             }
