@@ -7,7 +7,7 @@ public class Q3_majorityElement {
             if (count == 0) {
                 candidate = num;
             }
-          //  count += (num == candidate) ? 1 : -1;
+            //  count += (num == candidate) ? 1 : -1;
 
             if (num == candidate) {
                 count++;
@@ -15,6 +15,7 @@ public class Q3_majorityElement {
                 count--;
             }
         }
+        
 
         return candidate;
     }

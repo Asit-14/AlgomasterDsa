@@ -6,7 +6,7 @@ public class Q2_MoveZeroesStart {
             System.out.print(num1[i] + " ");
         }
         System.out.println();
-
+        
         int num2[] = {5, 0, 1, 0, 2};
         moveZeroesToStart(num2);
         for (int i = 0; i < num2.length; i++) {
@@ -14,6 +14,7 @@ public class Q2_MoveZeroesStart {
         }
         System.out.println();
     }
+
     public static void moveZeroesToStartapp(int[] num) {
         int n = num.length;
         int idx = n - 1;
@@ -28,7 +29,7 @@ public class Q2_MoveZeroesStart {
             idx--;
         }
     }
-
+    
     public static void moveZeroesToStart(int[] num) {
         int n = num.length;
         int writePos = n - 1;
