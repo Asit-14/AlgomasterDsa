@@ -2,7 +2,7 @@ public class Q9_IncreasingTripletSubsequence {
     public static void main(String[] args) {
         int arr[] = { 1, 2, 3, 4, 5 };
         boolean res = triple(arr); // Use boolean, not int
-        System.out.println("Increasing triplet exists? " + res)p;
+        System.out.println("Increasing triplet exists? " + res);
     }
 
     public static boolean triple(int nums[]) {
