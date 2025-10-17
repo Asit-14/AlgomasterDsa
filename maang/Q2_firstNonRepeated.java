@@ -1,34 +1,27 @@
 package maang;
-
 import java.util.Scanner;
 
 public class Q2_firstNonRepeated {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter  String : ");
+        System.out.print("Enter String: ");
         String str = sc.nextLine();
-        System.out.println("Answer  "+ noprepeat(str));
+        System.out.println("Answer: " + noRepeat(str));
     }
 
-    public static String noprepeat(String str) {
-        String res = "";
-       
-
+    public static String noRepeat(String str) {
         for (int i = 0; i < str.length(); i++) {
-             int count = 0;
-            if (str.charAt(i) != " ") {
+            if (str.charAt(i) != ' ') {
+                boolean unique = true;
                 for (int j = 0; j < str.length(); j++) {
-                    if (str.charAt(i) == str.charAt(j) && i != j) {
-                        count++;
+                    if (i != j && str.charAt(i) == str.charAt(j)) {
+                        unique = false;
                         break;
                     }
                 }
-                if (count == 0) {
-                    res += str.charAt(i);
-                    break;
-                }
+                if (unique) return String.valueOf(str.charAt(i));
             }
         }
-        return res;
+        return "";
     }
 }
