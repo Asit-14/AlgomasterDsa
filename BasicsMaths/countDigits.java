@@ -4,13 +4,20 @@ public class countDigits {
 
     public static void main(String[] args) {
         int number = 543443;
-        int count = 0;
+        int digits = digitsCount(number);
+        System.out.println("Number of digits in " + number + ": " + digits);
+    }
 
+    public static int digitsCount(int number) {
+        number = Math.abs(number);
+        if (number == 0) {
+            return 1;
+        }
+        int count = 0;
         while (number > 0) {
-            number = number / 10;
+            number /= 10;
             count++;
         }
-
-        System.out.println("Number of digits: " + count);
+        return count;
     }
 }
