@@ -34,7 +34,6 @@ public class Q2_MoveZeroesStart {
         int n = num.length;
         int writePos = n - 1;
         
-        // Move all non-zero elements to the end
         for (int i = n - 1; i >= 0; i--) {
             if (num[i] != 0) {
                 num[writePos] = num[i];
@@ -42,7 +41,6 @@ public class Q2_MoveZeroesStart {
             }
         }
         
-        // Fill remaining positions with zeros
         while (writePos >= 0) {
             num[writePos] = 0;
             writePos--;
