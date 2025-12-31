@@ -6,6 +6,7 @@ public class Q2_firstNonRepeated {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter String : ");
         String str = sc.nextLine();
+        
         System.out.println("Answer: " + noRepeat(str));
     }
 
